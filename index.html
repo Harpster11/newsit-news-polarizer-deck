@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Black And White Bootstrap Landing Page / Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/newsAPI.png">
+    <!-- Adobe font for NewsIT -->
+    <link rel="stylesheet" href="https://use.typekit.net/hyl3tpa.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">       
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 mx-auto">
+              <p class="italic">To better understand one's world,</p>
+              <h1>First Understand Where One Stands In It</h1>
+              <p class="italic">Introducing the News Polarizer, from NewsIT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro end-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container"><a href="#intro" class="navbar-brand link-scroll"><h1>NewsIt</h1></a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">Intro </a></li>
+              <li class="nav-item"><a href="#features" class="nav-link link-scroll">Feaures</a></li>
+              <li class="nav-item"><a href="#tech-stack" class="nav-link link-scroll">Stack</a></li>
+              <li class="nav-item"><a href="#demo" class="nav-link link-scroll">Demo</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- about-->
+    <section id="about" class="text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="heading">A New Way to See The News</h2>
+            <p class="lead">Search beyond your filter bubble.</p>
+            <p>NewsIt scans news headlines and returns the most positive, negative, politicized and neutral perspectives on any search query.</p>
+           
+          </div>
+          <div class="col-lg-5 mx-auto">
+            <p><img src="img/japan-mountains.jpg" alt="" class="img-fluid rounded-circle"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end-->
+    <!-- Services-->
+    <section id="features" style="background-color: #eee">
+      <div class="container">
+        <div class="row services">
+          <div class="col-lg-12">
+            <h2 class="heading">Features</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-desktop"></i></div>
+                  <h5>Comprehensive Search</h5>
+                  <p>Built on NewsAPI, NewsIt gathers and analyzes more than 30,000 global sources of news.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-book"></i></div>
+                  <h5>Comprehensive Reading</h5>
+                  <p>NewsIt A.I. underpins a singular diverse and easy evironment to search and view news. </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-globe"></i></div>
+                  <h5>Comprehensive Intelligence</h5>
+                  <p>Using IBM Watson Natural Language units, newsIT reads text from thousands of related articles in minutes, so you don't have to, returning the most extreme endpoints of coverage about a topic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services end-->
+    
+    <!-- Portfolio / gallery-->
+    <section id="tech-stack" class="gallery">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="heading">Technologies</h2>
+                <p>Built on the MERN Stack, using technologies from IBM Watson, NewsAPI and others.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="img/mongodb-logo.png" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/mongodb-logo.png" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/Expressjs.png" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/Expressjs.png" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box" style="background-color: white"><a href="img/react-logo.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/react-logo.jpg" style="background-color: white" alt="image" class="img-fluid"></a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box"><a href="img/node_logo.png" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/node_logo.png" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box" style="color: white"><a href="img/ibm-cloud-logi.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/ibm-cloud-logi.jpg" style="background-color: white" alt="image" class="img-fluid"></a></div>
+              </div>
+              <div class="col-md-4">
+                <div class="box"><a href="img/newsAPI.png" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/newsAPI.png" alt="image" class="img-fluid"></a></div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio / gallery end-->
+    <!-- text page-->
+    <section id="coming-soon" class="text-page section-inverse">
+      <div class="container">
+        <div class="row services">
+          <div class="col-lg-12">
+            <h2 class="heading">Coming Soon</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-laptop
+                  "></i></div>
+                  <h5>Browser Extension</h5>
+                  <p>Jump between perspectives without leaving your favorite news sites.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-bell"></i></div>
+                  <h5>Real-Time Inbox and SMS Alerts</h5>
+                  <p>Trigger alerts when sentiment on a news topic you follow changes. </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                  <h5>Deep New Analysis</h5>
+                  <p>Track sentiment and other symantic shifts overtime, in real time, across multiple targets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- text page end-->
+    <section id="demo" style="background-color: #eee">
+      <div class="container">
+        <div class="row services">
+          <div class="col-lg-12"></div>
+         <div class="col-lg-12 text-center">
+            <h1 style="font-family: 'Times New Roman', Times, serif"><a href="">Dive In Now.</a></h1>
+
+         </div> 
+         <div class="col-lg-12"></div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-->
+    <section id="contact" style="background-color: #fff;" class="text-page pb-4"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="heading">Contact</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <form id="contact-form" method="post" action="#" class="contact-form">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="name">Your firstname *</label>
+                          <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="surname">Your lastname *</label>
+                          <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Your email *</label>
+                      <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Your message for us *</label>
+                      <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6">
+                <p>We are John Harper, Alan Leverenz, Ariel Quinones, Ayisha Sadana, a group of Columbia Engineering bootcamp developers interested in helping people find better perspective on their news and their internet. </p>
+                <p>Contact us for more information about our buildout, plans for newsIT, or just for fun. </p>
+                <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="map"></div>
+    <footer style="background-color: #111;">
+      <div class="container"> 
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="mb-md-0 text-center text-md-left">&copy;2019 NewsIt, Columbia Engineering</p>
+          </div>
+          <div class="col-md-6">
+            <p class="credit mb-md-0 text-center text-md-right">Portfolio template by <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form">Bootstrapious</a></p>
+            <!-- Please do not remove the backlink to us. It is part of the licence conditions. Thanks for understanding :)-->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
+</html>
